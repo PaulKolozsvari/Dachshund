@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogSearcher", "LogSearcher\LogSearcher.csproj", "{1A5B958F-987B-40A2-8C77-37FDB6614DBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Figlut.Server.Toolkit.45", "..\..\..\FiglutSuiteRepo\source\trunk\Windows\Figlut.Server.Toolkit.45\Figlut.Server.Toolkit.45.csproj", "{A7C9A24D-E19B-42F5-A298-805A489334EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A5B958F-987B-40A2-8C77-37FDB6614DBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A5B958F-987B-40A2-8C77-37FDB6614DBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A5B958F-987B-40A2-8C77-37FDB6614DBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A5B958F-987B-40A2-8C77-37FDB6614DBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7C9A24D-E19B-42F5-A298-805A489334EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7C9A24D-E19B-42F5-A298-805A489334EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7C9A24D-E19B-42F5-A298-805A489334EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7C9A24D-E19B-42F5-A298-805A489334EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
