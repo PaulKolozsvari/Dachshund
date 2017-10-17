@@ -16,20 +16,49 @@
     {
         #region Methods
 
+        private static List<string> GetDeviceLogsKeywordsToFind()
+        {
+            string dateTime1 = "2017/04/19 8:29";
+            List<string> result = new List<string>()
+            {
+                dateTime1
+            };
+            return result;
+        }
+
+        private static List<string> GetTekSpeechAgentsKeywordsToFind()
+        {
+            string agentName = "PepAssignmentHeaderAgent";
+            string pickerName = "kg";
+            string branch = "6132";
+            string lineNumber = "9093";
+            //string sku = "895527";
+            string packingSlip = "866160146";
+            //string location = "B229";
+            //string quantity = "11";
+            ////string date = "2017-03-27";
+            //string date = "2013/09/23";
+            //string time = " 5:";
+            //string pickStatus = "R)";
+            //string deviceId = "5916457527";
+            //string text = "649473165,NATS";
+
+            List<string> result = new List<string>()
+                {
+                    //agentName.ToLower(),
+                    //pickerName.ToLower(),
+                    //branch.ToLower(),
+                    //lineNumber.ToString(),
+                    packingSlip
+                };
+            return result;
+        }
+
         static void Main(string[] args)
         {
             try
             {
-                //string smsMessage = @"You are subscribed to SMS notifications from Standard Pharmacy powered by Figlut.com. Visit http://goo.gl/nFmT5a to unsubscribe.";
-                //string smsMessage = @"Good day. Standard Pharmacy will be delivering your medication within the next 24-48 hours. TS: 2017/05/03 08:37:18 AM Include #stndpharma in reply.";
-                //string smsMessage = @"Good morning. And yet another month has flown by. We'll be sending your repeat medication to you within the next 24-48 hours. Regards. Standard Pharmacy.";
-                string smsMessage = @"Good morning. Yet another month has flown by. We will send your repeats to you within the next 24-48 hours. Standard Pharmacy.";
-                string suffix = @"Include #stndpharma in reply.";
-                int length = smsMessage.Length;
-                int suffixLength = suffix.Length;
-
-                //string targetDirectory = @"C:\Users\paulk\Desktop\PepLogs\April\19th\TekSpeechLogs";
-                string targetDirectory = @"C:\Users\paulk\Desktop\PepLogs\April\19th\DeviceLogs\TargetDevice\5916457526";
+                string targetDirectory = @"C:\Docs\Git\Pep-Speech\logs\2017-10-17";
                 List<string> keywordsToFind = GetTekSpeechAgentsKeywordsToFind();
 
                 if (!Directory.Exists(targetDirectory))
@@ -132,67 +161,6 @@
             }
             Console.WriteLine("Finished!");
             Console.ReadLine();
-        }
-
-        private static List<string> GetTekSpeechAgentsKeywordsToFind()
-        {
-            //string targetDirectory = @"C:\Users\paulk\Desktop\PepLogsMarch\TekSpeech Logs\27th";
-            //string targetDirectory = @"C:\Users\paulk\Desktop\PepLogsMarch\TekSpeech Agents Logs\27th";
-            //string targetDirectory = @"C:\Users\paulk\Desktop\PepLogsMarch\Voice Console Logs\Vocollect.20170403.143009";
-            //string agentName = "PepAssignmentLineResultAgent";
-            //string pickerName = "NATS";
-            //string branch = "6646";
-            //string lineNumber = "5860";
-            //string sku = "895845";
-            //string location = "B229";
-            //string quantity = "11";
-            ////string date = "2017-03-27";
-            //string date = "2013/09/23";
-            //string time = " 5:";
-            //string pickStatus = ",O)";
-            //string deviceId = "5916457527";
-            //string text = "649473165,NATS";
-
-            string agentName = "PepAssignmentLineResultAgent";
-            //string agentName = "PepAssignmentLinesAgent";
-            string pickerName = "EDWINA";
-            string branch = "8311";
-            string lineNumber = "6089";
-            string sku = "895527";
-            //string location = "B229";
-            //string quantity = "11";
-            ////string date = "2017-03-27";
-            //string date = "2013/09/23";
-            //string time = " 5:";
-            string pickStatus = "R)";
-            //string deviceId = "5916457527";
-            //string text = "649473165,NATS";
-
-            List<string> result = new List<string>()
-                {
-                    agentName.ToLower(),
-                    pickerName.ToLower(),
-                    //sku.ToLower(),
-                    //location.ToLower(),
-                    //quantity.ToLower(),
-                    //date.ToLower(),
-                    //time.ToLower(),
-                    branch.ToLower(),
-                    lineNumber.ToString(),
-                    //deviceId.ToLower(),
-                    //text.ToLower()
-                };
-            return result;
-        }
-
-        private static List<string> GetDeviceLogsKeywordsToFind()
-        {
-            string dateTime1 = "2017/04/19 8:29";
-            List<string> result = new List<string>()
-            {
-                dateTime1
-            };
-            return result;
         }
 
         #endregion //Methods
